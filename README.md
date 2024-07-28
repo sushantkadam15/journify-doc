@@ -1,3 +1,355 @@
-# Welcome to Sushant's Portfolio
+# Journify - Reflect and Discover Yourself
 
-Hello, I'm Sushant – a seasoned full stack developer and adept project manager. With over four years of experience in IT operations, process optimization, and project management, I bring a wealth of expertise and a passion for innovation. My journey has been driven by a passion for technology and a commitment to excellence, whether I'm developing complex software systems, managing projects to successful completion, or optimizing processes for maximum efficiency. Welcome to my portfolio – where innovation meets precision.
+### About Journify 
+
+Journify is a Zen-inspired journal app designed to enhance personal reflection and mindfulness. The app features customizable entries with Notion-style formatting, Zen music, tailored journaling prompts, focus mode, mood tracking, and visualizations through pie charts and calendar views.
+
+### Our Mission
+
+-   Provide users with a serene and intuitive journaling experience
+-   Encourage consistent journaling habits through features like streaks and calendar views
+-   Help users track and visualize their moods and progress over time
+
+## Development Journey 
+
+### Introduction
+
+As a full-stack engineer with expertise in both frontend and backend development, I led the development of Journify from concept to deployment. This involved building the app's core functionality, implementing the Notion-style block editor, integrating dashboards for insights, and ensuring a smooth user experience across all devices.
+
+The Inspiration The inspiration for Journify came from a serendipitous meeting at the Collision Conference in Toronto. There, I met Candice, a talented UI/UX designer. We discovered our shared passion for mindful living and personal journaling, recognizing the value of self-reflection but feeling that existing tools lacked the aesthetic appeal and functionality to make the experience truly fulfilling.
+
+Our Vision Drawing inspiration from Notion's block-style editor, we envisioned bringing this intuitive, flexible format to a dedicated journaling app. Our aim was to create a digital space that not only facilitated easy, structured journaling but also resonated with users who appreciate a calm, Zen-inspired environment.
+
+### Key Objectives
+
+1. Encourage regular journaling habits
+2. Support mental well-being
+3. Appeal to yoga enthusiasts and mindful living practitioners
+
+We believe Journify offers a unique solution for those seeking a more engaging and aesthetically pleasing journaling experience, combining the practicality of digital tools with the mindfulness of traditional journaling practices.
+
+### **Key Features**
+
+Highlight the main features of Journify, such as:
+
+-   **Customizable Entries:** Notion-style formatting using "/" commands.
+-   **Zen Music:** Curated playlists for focus, meditation, or relaxation.
+-   **Journaling Prompts:** Tailored prompts to inspire reflection.
+-   **Focus Mode:** Distraction-free journaling environment.
+-   **Streaks and Calendar Views:** Track journaling habits and revisit past entries.
+-   **Mood Tracking:** Record and visualize mood patterns with pie charts.
+-   **Calendar View:** A comprehensive view of journaling activity over time.
+
+### Design and User Experience 
+
+The design principles for Journify center around simplicity, elegance, and functionality. We created an intuitive and inviting interface to encourage regular journaling. The app features a clean, minimalist design with a calming color palette inspired by nature, promoting tranquility and focus.
+
+Typography was carefully selected for readability and warmth, while icons and visual elements feature soft, rounded edges to maintain a gentle aesthetic. The Zen vibe influences every aspect of the user interface, from soothing background animations to subtle ambient sounds and nature-themed illustrations.
+
+A distraction-free writing interface, complete with an optional focus mode, allows users to immerse themselves fully in their journaling. Integrated Zen music playlists enhance the overall experience, creating a sanctuary for reflection and mindfulness.
+
+### User Feedback and Iterations 
+
+Throughout development, we conducted multiple rounds of user testing to refine Journify's design and functionality. Users appreciated the clean interface, praising its ease of use and the positive impact of Zen music playlists on focus and reflection.
+
+Feedback on the block-style editor led to fine-tuning for improved responsiveness and additional formatting options. Users emphasized the importance of visual consistency, prompting refinements in our color palette and iconography. The focus mode received high praise for creating a distraction-free writing environment.
+
+By incorporating this feedback, we've created a user experience that meets and exceeds our target audience's expectations, making Journify a delightful and effective tool for mindful journaling.
+
+## Technical Implementation
+
+### **Technologies and Frameworks Used to Build Journify**
+
+Journify is built using the MERN stack (MongoDB, Express, React, and Node.js). This stack was chosen for its efficiency, scalability, and flexibility in developing both the frontend and backend of the application.
+
+**Frontend:**
+
+-   **React:** Provides a robust framework for creating dynamic user interfaces with reusable components.
+-   **Vite:** The project uses Vite as the build tool, which offers a faster and leaner development experience compared to traditional tools like Webpack.
+-   **Ant Design:** For UI components, we used Ant Design and Ant Design Style. These libraries provide a wide range of pre-designed components, ensuring a consistent and professional look and feel throughout the app.
+-   **Tailwind CSS:** Tailwind CSS is used for styling, providing utility-first CSS classes that allow for rapid and responsive design.
+-   **@blocknote/react and @blocknote/mantine:** These libraries are used to implement the Notion-style block editor, allowing users to create and format journal entries with ease.
+-   **React Router:** For handling navigation and routing within the app, React Router is utilized, ensuring smooth transitions between different views and pages.
+-   **Axios:** Axios is used for making HTTP requests to the backend, ensuring efficient data fetching and submission.
+
+**Backend:**
+
+-   **Node.js and Express:** Express is used to create API endpoints that handle CRUD operations for journal entries and user data.
+-   **MongoDB and Mongoose:** MongoDB is used as the database, with Mongoose as the ODM (Object Data Modeling) library. This setup allows for flexible and efficient data modeling and querying.
+
+**Database Schemas:**
+
+**User Schema**
+
+```
+const mongoose = require('mongoose');
+
+const userSchema = new mongoose.Schema(
+	{
+		name: {
+			type: String,
+			required: true,
+		},
+		email: {
+			type: String,
+			required: true,
+			unique: true,
+			trim: true,
+			lowercase: true,
+		},
+		password: {
+			type: String,
+			required: false,
+		},
+		picture: {
+			type: String,
+		},
+		googleId: String,
+		preferences: {
+			isDarkMode: {
+				type: Boolean,
+				default: false,
+			},
+			fontFamily: {
+				type: String,
+				default: 'JetBrains Mono, monospace',
+			},
+			onLoadLastJournalEntry: {
+				type: Boolean,
+				default: true,
+			},
+		},
+		longestStreak: {
+			type: Number,
+			default: 0,
+		},
+		passwordReset: {
+			token: String,
+			expiryDate: {
+				type: Date,
+				default: Date.now() + 3600000, // 1 hour
+			},
+		},
+	},
+	{ timestamps: true }
+);
+
+const User = mongoose.model('User', userSchema);
+
+module.exports = User;
+```
+
+**Journal Entry Schema  
+**
+
+```
+const mongoose = require('mongoose');
+
+const journalEntrySchema = new mongoose.Schema(
+	{
+		userID: {
+			type: mongoose.Schema.Types.ObjectId,
+			ref: 'User',
+			required: true,
+		},
+		title: {
+			type: String,
+			required: true,
+		},
+		content: {
+			type: String,
+			required: true,
+		},
+		mood: {
+			type: String,
+			enum: [
+				'happy',
+				'relaxed',
+				'excited',
+				'neutral',
+				'stressed',
+				'sad',
+				'angry',
+				'anxious',
+			],
+			required: true,
+		},
+	},
+	{ timestamps: true }
+);
+
+const JournalEntry = mongoose.model('JournalEntry', journalEntrySchema);
+
+module.exports = JournalEntry;
+```
+
+-   Authentication and Security: For authentication, JSON Web Tokens (JWT) are used, and `bcrypt`  is used for hashing passwords to ensure secure user authentication.
+-   Additional Libraries: Other essential libraries include `dotenv`  for managing environment variables, `cookie-parser`  for handling cookies, and `nodemailer`  for sending emails.
+
+**Hosting and Infrastructure:**
+
+-   **Frontend:** Hosted on AWS Amplify, providing a scalable and managed environment for the React application.
+-   **Backend:** Hosted on AWS Elastic Beanstalk, ensuring a robust and scalable server environment for the Express application.
+-   **Routing:** Managed through AWS Route 53, providing reliable and scalable DNS web service.
+-   **HTTPS:** AWS Certificate Manager is used to manage SSL/TLS certificates, ensuring secure HTTPS communication across the application.
+
+### Challenges Faced During Development
+
+**Implementing Notion-Style Formatting:**
+
+One significant challenge was implementing the Notion-style block editor. While using the beta phase library, there was an issue where the editor would re-render completely upon any `onChange` event when it was made controlled, making it difficult to get the values being typed efficiently.
+
+**Solution:**
+
+-   Made the editor uncontrolled.
+-   Implemented a reducer for central management of all journal data.
+-   Developed debounced functions for APIs and state updates to ensure smooth user experience and efficient data handling.
+
+**Journal Data Management:**
+
+```
+import React, { createContext, useReducer, useEffect, useContext, useCallback } from 'react';
+import { createJournalEntry, getAllJournalEntries } from '../services/journalEntryService';
+import { useUser } from '../contexts/UserContext';
+
+// Initial state
+const initialState = [];
+
+// Action types
+const ACTIONS = {
+    ADD_ENTRY: 'ADD_ENTRY',
+    UPDATE_ENTRY: 'UPDATE_ENTRY',
+    DELETE_ENTRY: 'DELETE_ENTRY',
+    SET_ENTRIES: 'SET_ENTRIES',
+    RESET_ENTRIES: 'RESET_ENTRIES',
+};
+
+// Reducer function
+const journalEntriesReducer = (state, action) => {
+    switch (action.type) {
+        case ACTIONS.ADD_ENTRY:
+            return [action.payload, ...state];
+
+        case ACTIONS.UPDATE_ENTRY:
+            return state
+                .map((entry) =>
+                    entry._id === action.payload._id
+                        ? { ...entry, ...action.payload }
+                        : entry,
+                )
+                .sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt));
+
+        case ACTIONS.DELETE_ENTRY:
+            return state.filter((entry) => entry._id !== action.payload);
+
+        case ACTIONS.SET_ENTRIES:
+            return action.payload.sort(
+                (a, b) => new Date(b.updatedAt) - new Date(a.updatedAt),
+            );
+
+        case ACTIONS.RESET_ENTRIES:
+            return [];
+
+        default:
+            return state;
+    }
+};
+
+// Create context
+const JournalEntriesContext = createContext();
+
+// Provider component
+export const JournalEntriesProvider = ({ children }) => {
+    const [journalEntriesState, journalEntriesDispatch] = useReducer(
+        journalEntriesReducer,
+        initialState,
+    );
+    const { user, logout } = useUser();
+
+    const fetchEntries = useCallback(async () => {
+        if (!user?._id || !journalEntriesState?.length === 0) {
+            return;
+        }
+        // Fetch journal entries from the database
+        try {
+            const journalEntries = await getAllJournalEntries();
+            if (journalEntries.length === 0) {
+                const firstJournalEntry = await createJournalEntry();
+                journalEntries.push(firstJournalEntry);
+            }
+            journalEntriesDispatch({
+                type: ACTIONS.SET_ENTRIES,
+                payload: journalEntries,
+            });
+        } catch (error) {
+            console.error('Failed to fetch journal entries:', error);
+            if (error?.status === 401) {
+                await logout();
+            }
+        }
+    }, [user?._id]);
+
+    useEffect(() => {
+        fetchEntries();
+    }, [fetchEntries]);
+
+    const journalEntriesCleanup = () => {
+        journalEntriesDispatch({ type: ACTIONS.RESET_ENTRIES });
+    };
+
+    return (
+        <JournalEntriesContext.Provider
+            value={{
+                journalEntriesState,
+                journalEntriesDispatch,
+                ACTIONS,
+                journalEntriesCleanup,
+            }}
+        >
+            {children}
+        </JournalEntriesContext.Provider>
+    );
+};
+
+export const useJournalEntries = () => {
+    const context = useContext(JournalEntriesContext);
+    if (!context) {
+        throw new Error(
+            'useJournalEntries must be used within a JournalEntriesProvider',
+        );
+    }
+    return context;
+};
+```
+
+**Token-Based Authentication:**
+
+Implementing cookie-based authentication for the first time presented challenges, particularly in understanding and configuring all the cookie options correctly. However, this process significantly enhanced the security and usability of the application.
+
+**Auth Token Generation:**
+
+```
+function generateAuthToken(user) {
+  if (!user || !user._id || !user.email) {
+    throw new Error('User object is missing required properties');
+  }
+
+  return jwt.sign(
+    {
+      userId: user._id,
+      email: user.email,
+    },
+    process.env.JWT_SECRET
+  );
+}
+```
+
+By overcoming these challenges, Journify provides a seamless, secure, and responsive journaling experience for its users.
+
+**Making Tour Component Responsive:**
+
+-   The tour component offered by Ant Design was not responsive across devices. Overwriting styles caused issues on the cellphones.
+
+![](http://localhost:9425/images/9a8598d3-6a7e-4922-aec9-3cb93a4526e1.gif) ![](http://localhost:9425/images/b1f34aef-2305-4451-b69c-9694a7e24770.gif)
+
+-   Redesigned the entire tour workflow using @reactour/tour to ensure a seamless and responsive user experience.
