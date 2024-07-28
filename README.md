@@ -98,10 +98,10 @@ Journify is built using the MERN stack (MongoDB, Express, React, and Node.js). T
 
 #### **Frontend**
 
-<div style="display: flex; justify-content: space-around; align-items: center;">
-  <img src="https://github.com/user-attachments/assets/8ad7f9b4-df21-480a-8007-87fc5ee520af" alt="React Logo" style="height: 100px; width: auto;">
-    <img src="https://github.com/user-attachments/assets/6ccceac2-17e7-41a8-ac40-f7efaa94a26c" alt="Ant Design Logo" style="height: 100px; width: auto;">
-     <img src="https://github.com/user-attachments/assets/dc3631f6-2cf3-4d67-b49e-35260aef752d" alt="Tailwind CSS Logo" style="height: 100px; width: auto;">
+<div style="display: flex; justify-content: space-around; align-items: center; gap: 10px;">
+  <img src="https://github.com/user-attachments/assets/8ad7f9b4-df21-480a-8007-87fc5ee520af" alt="React Logo" style="height: 40px; width: auto;">
+    <img src="https://github.com/user-attachments/assets/6ccceac2-17e7-41a8-ac40-f7efaa94a26c" alt="Ant Design Logo" style="height: 40px; width: auto;">
+     <img src="https://github.com/user-attachments/assets/c2006721-e0f5-4509-881f-ed0e5ec5f70d" alt="Tailwind CSS Logo" style="height: 40px; width: auto;">
       <img src="https://github.com/user-attachments/assets/0ff9b104-f4a0-4ee9-a82f-10755d334c8a" alt="Blocknote Logo" style="height: 40px; width: auto;">
        <img src="https://github.com/user-attachments/assets/9872a0f1-1a9f-48f2-9079-c4fa37c20dbe" alt="Axios Logo" style="height: 40px; width: auto;">
 </div>
