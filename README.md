@@ -406,17 +406,17 @@ By overcoming these challenges, Journify provides a seamless, secure, and respon
 
 - The tour component offered by Ant Design was not responsive across devices. Overwriting styles caused issues on cell phones.
 
-![](http://localhost:9425/images/9a8598d3-6a7e-4922-aec9-3cb93a4526e1.gif) ![](http://localhost:9425/images/b1f34aef-2305-4451-b69c-9694a7e24770.gif)  
+
+  <img src="https://github.com/user-attachments/assets/89f634a5-3847-4631-aca4-4d758f48335e" alt="tour-desktop" style="display: inline-block; width: 350px;">
+
+  <img src="https://github.com/user-attachments/assets/54db513b-ce38-4d87-82e2-1770e9ce6d8d" alt="tour-mobile" style="display: inline-block;">
+
 
 - Redesigned the entire tour workflow using @reactour/tour to ensure a seamless and responsive user experience.
-
   
 
 ## Reflection and Learnings
 
-* * *
-
-  
 
 Working on Journify has been an enriching and transformative experience. This project not only deepened my technical skills but also honed my problem-solving abilities and introduced me to new technologies and best practices in full-stack development.
 
@@ -455,11 +455,8 @@ Reflecting on this project, I am proud of the progress made and excited about th
 
 ## Conclusion
 
-* * *
+![low-fedality](https://github.com/user-attachments/assets/43ff2011-7ebd-4d8e-8062-43fa6525d93c)
 
-  
-
-![](http://localhost:9425/images/6b0ea7ea-c4fb-4db2-9ab2-089e2cf2f35f.png)  
 
 Throughout this presentation, we explored the development and features of Journify, a comprehensive journaling app designed to enhance user experience and encourage consistent journaling habits. Key highlights include:
 
