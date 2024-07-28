@@ -97,10 +97,13 @@ By incorporating this feedback, we've created a user experience that meets and e
 Journify is built using the MERN stack (MongoDB, Express, React, and Node.js). This stack was chosen for its efficiency, scalability, and flexibility in developing both the frontend and backend of the application.
 
 #### **Frontend**
-<div style="display: flex; justify-content: space-around; align-items: center;">
 
+<div style="display: flex; justify-content: space-around; align-items: center;">
   <img src="https://github.com/user-attachments/assets/8ad7f9b4-df21-480a-8007-87fc5ee520af" alt="React Logo" style="height: 100px; width: auto;">
-  
+    <img src="https://github.com/user-attachments/assets/6ccceac2-17e7-41a8-ac40-f7efaa94a26c" alt="Ant Design Logo" style="height: 100px; width: auto;">
+     <img src="https://github.com/user-attachments/assets/dc3631f6-2cf3-4d67-b49e-35260aef752d" alt="Tailwind CSS Logo" style="height: 100px; width: auto;">
+      <img src="https://github.com/user-attachments/assets/0ff9b104-f4a0-4ee9-a82f-10755d334c8a" alt="Blocknote Logo" style="height: 40px; width: auto;">
+       <img src="https://github.com/user-attachments/assets/9872a0f1-1a9f-48f2-9079-c4fa37c20dbe" alt="Axios Logo" style="height: 40px; width: auto;">
 </div>
 
 - **React:** Provides a robust framework for creating dynamic user interfaces with reusable components.
@@ -250,7 +253,7 @@ module.exports = JournalEntry;
 
 ### **Implementing Notion-Style Formatting:**
 
-One significant challenge was implementing the Notion-style block editor. While using the beta phase library, there was an issue where the editor would re-render completely upon any `onChange` event when it was made controlled, making it difficult to get the values being typed efficiently.
+One significant challenge was implementing the Notion-style block editor. While using the beta phase library, there was an issue where the editor would re-render completely upon any `onChange` event when it was made controlled, making it difficult to get the values to be typed efficiently.
 
 #### **Solution**
 
@@ -401,7 +404,7 @@ By overcoming these challenges, Journify provides a seamless, secure, and respon
 
 ### **Making Tour Component Responsive**
 
-- The tour component offered by Ant Design was not responsive across devices. Overwriting styles caused issues on the cellphones.
+- The tour component offered by Ant Design was not responsive across devices. Overwriting styles caused issues on cell phones.
 
 ![](http://localhost:9425/images/9a8598d3-6a7e-4922-aec9-3cb93a4526e1.gif) ![](http://localhost:9425/images/b1f34aef-2305-4451-b69c-9694a7e24770.gif)  
 
