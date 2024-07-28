@@ -1,9 +1,8 @@
-👋🏻 Hi there! I'm Sushant, a dedicated full stack developer and experienced project manager. Over the past four years, I've honed my skills in IT operations, process optimization, and project management, cultivating a diverse skill set and a keen eye for innovation.
+---
+layout: default
+title: Home
+---
 
-  
+# Welcome to Sushant's Portfolio
 
-My journey in tech has been driven by two key factors: a genuine passion for cutting-edge technology and an unwavering commitment to excellence. Whether I'm developing sophisticated software systems, guiding projects to successful completion, or streamlining processes for peak efficiency, I always bring my best to the table.
-
-  
-
-Welcome to my portfolio – a showcase of how I blend technical expertise with creative problem-solving. Here, you'll see firsthand how I turn complex challenges into elegant solutions, always with an eye on the bigger picture. Let's explore how we can create something amazing together!
+Hello, I'm Sushant Kadam – a seasoned full stack developer and adept project manager. With over four years of experience in IT operations, process optimization, and project management, I bring a wealth of expertise and a passion for innovation. My journey has been driven by a passion for technology and a commitment to excellence, whether I'm developing complex software systems, managing projects to successful completion, or optimizing processes for maximum efficiency. Welcome to my portfolio – where innovation meets precision.
