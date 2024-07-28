@@ -1,10 +1,8 @@
 # Journify - Reflect and Discover Yourself
 
-
 <p align="center">
 	<img width="100%" alt="logo" src="https://github.com/user-attachments/assets/6824ce96-6a8f-41a1-9dc8-3b922e53a62e">
 </p>
-
 
 ### About Journify 
 
@@ -12,17 +10,13 @@ Journify is a Zen-inspired journal app designed to enhance personal reflection a
 
 ### Our Mission
 
-- Provide users with a serene and intuitive journaling experience
-- Encourage consistent journaling habits through features like streaks and calendar views
-- Help users track and visualize their moods and progress over time
-
-  
+-   Provide users with a serene and intuitive journaling experience
+-   Encourage consistent journaling habits through features like streaks and calendar views
+-   Help users track and visualize their moods and progress over time
 
 ## Development Journey 
 
-* * *
-
-  
+---
 
 ### Introduction
 
@@ -44,36 +38,29 @@ We believe Journify offers a unique solution for those seeking a more engaging a
 
 Highlight the main features of Journify, such as:
 
-- **Customizable Entries:** Notion-style formatting using "/" commands.
-- **Zen Music:** Curated playlists for focus, meditation, or relaxation.
-- **Journaling Prompts:** Tailored prompts to inspire reflection.
-- **Focus Mode:** Distraction-free journaling environment.
-- **Streaks and Calendar Views:** Track journaling habits and revisit past entries.
-- **Mood Tracking:** Record and visualize mood patterns with pie charts.
-- **Calendar View:** A comprehensive view of journaling activity over time.
-
-  
+-   **Customizable Entries:** Notion-style formatting using "/" commands.
+-   **Zen Music:** Curated playlists for focus, meditation, or relaxation.
+-   **Journaling Prompts:** Tailored prompts to inspire reflection.
+-   **Focus Mode:** Distraction-free journaling environment.
+-   **Streaks and Calendar Views:** Track journaling habits and revisit past entries.
+-   **Mood Tracking:** Record and visualize mood patterns with pie charts.
+-   **Calendar View:** A comprehensive view of journaling activity over time.
 
 ## Design and User Experience 
 
 ![mood-board](https://github.com/user-attachments/assets/a86d6e8b-1b10-475e-8e50-e6529d901d14)
- 
 
 The design principles for Journify center around simplicity, elegance, and functionality. We created an intuitive and inviting interface to encourage regular journaling. The app features a clean, minimalist design with a calming color palette inspired by nature, promoting tranquility and focus.
 
 <p align="center"><img height="350" alt="logo" src="https://github.com/user-attachments/assets/1ded6a90-eb6d-4858-9cf4-abb99258e7d4">
 </p>
 
-
 Typography was carefully selected for readability and warmth, while icons and visual elements feature soft, rounded edges to maintain a gentle aesthetic. The Zen vibe influences every aspect of the user interface, from soothing background animations to subtle ambient sounds and nature-themed illustrations.
 
 A distraction-free writing interface, complete with an optional focus mode, allows users to immerse themselves fully in their journaling. Integrated Zen music playlists enhance the overall experience, creating a sanctuary for reflection and mindfulness.
 
-  
-
-  
-
 ### User Feedback and Iterations 
+
 ![research-1](https://github.com/user-attachments/assets/4c3541cc-1005-49a7-8a73-b0eb19f2657b)
 
 Throughout development, we conducted multiple rounds of user testing to refine Journify's design and functionality. Users appreciated the clean interface, praising its ease of use and the positive impact of Zen music playlists on focus and reflection.
@@ -87,8 +74,6 @@ Feedback on the block-style editor led to fine-tuning for improved responsivenes
 ![research-4](https://github.com/user-attachments/assets/ba5f26b9-8a36-4dc0-aa17-f15383580b2f)
 
 By incorporating this feedback, we've created a user experience that meets and exceeds our target audience's expectations, making Journify a delightful and effective tool for mindful journaling.
-
-
 
 ## Technical Implementation
 
@@ -106,20 +91,20 @@ Journify is built using the MERN stack (MongoDB, Express, React, and Node.js). T
        <img src="https://github.com/user-attachments/assets/9872a0f1-1a9f-48f2-9079-c4fa37c20dbe" alt="Axios Logo" style="height: 40px; width: auto;">
 </div>
 
-- **React:** Provides a robust framework for creating dynamic user interfaces with reusable components.
-- **Vite:** The project uses Vite as the build tool, which offers a faster and leaner development experience compared to traditional tools like Webpack.
-- **Ant Design:** For UI components, we used Ant Design and Ant Design Style. These libraries provide a wide range of pre-designed components, ensuring a consistent and professional look and feel throughout the app.
-- **Tailwind CSS:** Tailwind CSS is used for styling, providing utility-first CSS classes that allow for rapid and responsive design.
-- **@blocknote/react and @blocknote/mantine:** These libraries are used to implement the Notion-style block editor, allowing users to create and format journal entries with ease.
-- **React Router:** For handling navigation and routing within the app, React Router is utilized, ensuring smooth transitions between different views and pages.
-- **Axios:** Axios is used for making HTTP requests to the backend, ensuring efficient data fetching and submission.
+-   **React:** Provides a robust framework for creating dynamic user interfaces with reusable components.
+-   **Vite:** The project uses Vite as the build tool, which offers a faster and leaner development experience compared to traditional tools like Webpack.
+-   **Ant Design:** For UI components, we used Ant Design and Ant Design Style. These libraries provide a wide range of pre-designed components, ensuring a consistent and professional look and feel throughout the app.
+-   **Tailwind CSS:** Tailwind CSS is used for styling, providing utility-first CSS classes that allow for rapid and responsive design.
+-   **@blocknote/react and @blocknote/mantine:** These libraries are used to implement the Notion-style block editor, allowing users to create and format journal entries with ease.
+-   **React Router:** For handling navigation and routing within the app, React Router is utilized, ensuring smooth transitions between different views and pages.
+-   **Axios:** Axios is used for making HTTP requests to the backend, ensuring efficient data fetching and submission.
 
 #### **Backend**
 
 **\[Logos Here\]**
 
-- **Node.js and Express:** Express is used to create API endpoints that handle CRUD operations for journal entries and user data.
-- **MongoDB and Mongoose:** MongoDB is used as the database, with Mongoose as the ODM (Object Data Modeling) library. This setup allows for flexible and efficient data modeling and querying.
+-   **Node.js and Express:** Express is used to create API endpoints that handle CRUD operations for journal entries and user data.
+-   **MongoDB and Mongoose:** MongoDB is used as the database, with Mongoose as the ODM (Object Data Modeling) library. This setup allows for flexible and efficient data modeling and querying.
 
 ##### **Database Schemas:**
 
@@ -183,10 +168,9 @@ const User = mongoose.model('User', userSchema);
 module.exports = User;
 ```
 
-  
+##### \*\*Journal Entry Schema
 
-##### **Journal Entry Schema  
-**
+\*\*
 
 ```
 const mongoose = require('mongoose');
@@ -229,27 +213,21 @@ const JournalEntry = mongoose.model('JournalEntry', journalEntrySchema);
 module.exports = JournalEntry;
 ```
 
-  
-
-- Authentication and Security: For authentication, JSON Web Tokens (JWT) are used, and `bcrypt`  is used for hashing passwords to ensure secure user authentication. 
-- Additional Libraries: Other essential libraries include `dotenv`  for managing environment variables, `cookie-parser`  for handling cookies, and `nodemailer`  for sending emails.
+-   Authentication and Security: For authentication, JSON Web Tokens (JWT) are used, and `bcrypt`  is used for hashing passwords to ensure secure user authentication.
+-   Additional Libraries: Other essential libraries include `dotenv`  for managing environment variables, `cookie-parser`  for handling cookies, and `nodemailer`  for sending emails.
 
 #### **Hosting and Infrastructure**
 
 **\[LOGOS Here\]**
 
-- **Frontend:** Hosted on AWS Amplify, providing a scalable and managed environment for the React application.
-- **Backend:** Hosted on AWS Elastic Beanstalk, ensuring a robust and scalable server environment for the Express application.
-- **Routing:** Managed through AWS Route 53, providing reliable and scalable DNS web service.
-- **HTTPS:** AWS Certificate Manager is used to manage SSL/TLS certificates, ensuring secure HTTPS communication across the application.
-
-  
+-   **Frontend:** Hosted on AWS Amplify, providing a scalable and managed environment for the React application.
+-   **Backend:** Hosted on AWS Elastic Beanstalk, ensuring a robust and scalable server environment for the Express application.
+-   **Routing:** Managed through AWS Route 53, providing reliable and scalable DNS web service.
+-   **HTTPS:** AWS Certificate Manager is used to manage SSL/TLS certificates, ensuring secure HTTPS communication across the application.
 
 ## Challenges Faced During Development
 
-* * *
-
-  
+---
 
 ### **Implementing Notion-Style Formatting:**
 
@@ -257,9 +235,9 @@ One significant challenge was implementing the Notion-style block editor. While 
 
 #### **Solution**
 
-- Made the editor uncontrolled.
-- Implemented a reducer for central management of all journal data.
-- Developed debounced functions for APIs and state updates to ensure smooth user experience and efficient data handling.
+-   Made the editor uncontrolled.
+-   Implemented a reducer for central management of all journal data.
+-   Developed debounced functions for APIs and state updates to ensure smooth user experience and efficient data handling.
 
 **Journal Data Management:**
 
@@ -404,19 +382,15 @@ By overcoming these challenges, Journify provides a seamless, secure, and respon
 
 ### **Making Tour Component Responsive**
 
-- The tour component offered by Ant Design was not responsive across devices. Overwriting styles caused issues on cell phones.
+-   The tour component offered by Ant Design was not responsive across devices. Overwriting styles caused issues on cell phones.
 
+    <img src="https://github.com/user-attachments/assets/89f634a5-3847-4631-aca4-4d758f48335e" alt="tour-desktop" style="display: inline-block; width: 350px;">
 
-  <img src="https://github.com/user-attachments/assets/89f634a5-3847-4631-aca4-4d758f48335e" alt="tour-desktop" style="display: inline-block; width: 350px;">
+    <img src="https://github.com/user-attachments/assets/54db513b-ce38-4d87-82e2-1770e9ce6d8d" alt="tour-mobile" style="display: inline-block;">
 
-  <img src="https://github.com/user-attachments/assets/54db513b-ce38-4d87-82e2-1770e9ce6d8d" alt="tour-mobile" style="display: inline-block;">
-
-
-- Redesigned the entire tour workflow using @reactour/tour to ensure a seamless and responsive user experience.
-  
+-   Redesigned the entire tour workflow using @reactour/tour to ensure a seamless and responsive user experience.
 
 ## Reflection and Learnings
-
 
 Working on Journify has been an enriching and transformative experience. This project not only deepened my technical skills but also honed my problem-solving abilities and introduced me to new technologies and best practices in full-stack development.
 
@@ -447,16 +421,11 @@ As Journify continues to evolve, there are several enhancements and features I p
 4. **Offline Mode:** Implementing offline capabilities to allow users to access and create journal entries without an internet connection, syncing data once connectivity is restored.
 5. **Notifications and Reminders:** Adding features for setting reminders and notifications to encourage consistent journaling habits.
 
-  
-
 Reflecting on this project, I am proud of the progress made and excited about the potential future enhancements. Journify has been a significant milestone in my journey as a developer, and I look forward to continuing to refine and expand its capabilities.
-
-  
 
 ## Conclusion
 
 ![low-fedality](https://github.com/user-attachments/assets/43ff2011-7ebd-4d8e-8062-43fa6525d93c)
-
 
 Throughout this presentation, we explored the development and features of Journify, a comprehensive journaling app designed to enhance user experience and encourage consistent journaling habits. Key highlights include:
 
@@ -465,14 +434,8 @@ Throughout this presentation, we explored the development and features of Journi
 3. **Challenges Overcome:** We navigated complex issues, such as integrating beta libraries, managing state efficiently, and ensuring component responsiveness, to create a polished final product.
 4. **Security and Authentication:** Implementing secure, token-based authentication and best practices in data protection ensures a safe environment for users' personal entries.
 
-  
-
 Journify isn't just a journaling app; it's a tool designed to foster mindfulness, self-reflection, and personal growth. By providing users with a versatile and intuitive platform, Journify encourages regular journaling, helping individuals track their moods, document their thoughts, and reflect on their experiences. The app's user-centric design and advanced features make it a valuable addition to anyone's daily routine, promoting mental well-being and productivity.
 
-  
-
 I invite you to experience the benefits of Journify firsthand. Whether you're looking to improve your journaling habits, track your moods, or simply have a dedicated space for reflection, Journify is the perfect companion. Try the app today and see how it can transform your journaling practice.
-
-  
 
 For further discussion, collaboration, or feedback, feel free to connect with me. Let's explore how Journify can continue to evolve and meet your needs. Thank you for your time and interest in Journify. Together, let's make mindfulness and reflection a seamless part of everyday life.
