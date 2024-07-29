@@ -369,18 +369,22 @@ Implementing cookie-based authentication for the first time presented challenges
 #### **Auth Token Generation:**
 
 ```
-function generateAuthToken(user) {
-  if (!user || !user._id || !user.email) {
-    throw new Error('User object is missing required properties');
-  }
+const authTokenCookieOptions = {
+	expires: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000), // Expires in 30 days
+};
 
-  return jwt.sign(
-    {
-      userId: user._id,
-      email: user.email,
-    },
-    process.env.JWT_SECRET
-  );
+// Update the authTokenCookieOptions ifo in production
+if (process.env.NODE_ENV !== 'development') {
+	authTokenCookieOptions.domain = process.env.AUTH_COOKIE_DOMAIN;
+	authTokenCookieOptions.secure = true; // Cannot be true if backend is not HTTPS
+	authTokenCookieOptions.path = '/';
+	authTokenCookieOptions.sameSite = 'none';
+	authTokenCookieOptions.httpOnly = true;
+
+	console.log(
+		'Using production authTokenCookieOptions',
+		authTokenCookieOptions
+	);
 }
 ```
 
