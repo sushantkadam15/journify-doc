@@ -4,8 +4,6 @@
 	<img width="100%" alt="logo" src="https://github.com/user-attachments/assets/6824ce96-6a8f-41a1-9dc8-3b922e53a62e">
 </p>
 
-### About Journify 
-
 Journify is a Zen-inspired journal app designed to enhance personal reflection and mindfulness. The app features customizable entries with Notion-style formatting, Zen music, tailored journaling prompts, focus mode, mood tracking, and visualizations through pie charts and calendar views.
 
 ### Our Mission
