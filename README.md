@@ -16,13 +16,11 @@ Journify is a Zen-inspired journal app designed to enhance personal reflection a
 
 ## Development Journey 
 
----
-
 ### Introduction
 
 As a full-stack engineer with expertise in both frontend and backend development, I led the development of Journify from concept to deployment. This involved building the app's core functionality, implementing the Notion-style block editor, integrating dashboards for insights, and ensuring a smooth user experience across all devices.
 
-The Inspiration The inspiration for Journify came from a serendipitous meeting at the Collision Conference in Toronto. There, I met Candice, a talented UI/UX designer. We discovered our shared passion for mindful living and personal journaling, recognizing the value of self-reflection but feeling that existing tools lacked the aesthetic appeal and functionality to make the experience truly fulfilling.
+The inspiration for Journify came from a fortunate meeting at the Collision Conference in Toronto. There, I met Candice, a talented UI/UX designer. We discovered our shared passion for mindful living and personal journaling, recognizing the value of self-reflection but feeling that existing tools lacked the aesthetic appeal and functionality to make the experience truly fulfilling.
 
 Our Vision Drawing inspiration from Notion's block-style editor, we envisioned bringing this intuitive, flexible format to a dedicated journaling app. We aimed to create a digital space that not only facilitated easy, structured journaling but also resonated with users who appreciate a calm, Zen-inspired environment.
 
@@ -173,9 +171,7 @@ const User = mongoose.model('User', userSchema);
 module.exports = User;
 ```
 
-##### \*\*Journal Entry Schema
-
-\*\*
+##### Journal Entry Schema
 
 ```
 const mongoose = require('mongoose');
@@ -232,8 +228,6 @@ module.exports = JournalEntry;
 -   **HTTPS:** AWS Certificate Manager is used to manage SSL/TLS certificates, ensuring secure HTTPS communication across the application.
 
 ## Challenges Faced During Development
-
----
 
 ### **Implementing Notion-Style Formatting:**
 
@@ -437,7 +431,7 @@ Reflecting on this project, I am proud of the progress made and excited about th
 
 ![low-fedality](https://github.com/user-attachments/assets/43ff2011-7ebd-4d8e-8062-43fa6525d93c)
 
-Throughout this presentation, we explored the development and features of Journify, a comprehensive journaling app designed to enhance user experience and encourage consistent journaling habits. Key highlights include:
+Throughout this documentation, we explored the development and features of Journify, a comprehensive journaling app designed to enhance user experience and encourage consistent journaling habits. Key highlights include:
 
 1. **Technological Framework:** Journify is built using the efficient and scalable MERN stack, ensuring robust performance and flexibility.
 2. **Innovative Features:** From the Notion-style block editor to the responsive design and seamless navigation, Journify offers a rich, user-friendly interface.
