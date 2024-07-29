@@ -83,7 +83,7 @@ Journify is built using the MERN stack (MongoDB, Express, React, and Node.js). T
 
 #### **Frontend**
 
-<div style="display: flex; justify-content: space-around; align-items: center; gap: 10px;">
+<div style="display: flex; justify-content: space-around; align-items: center; gap: 10px;" align="center">
   <img src="https://github.com/user-attachments/assets/8ad7f9b4-df21-480a-8007-87fc5ee520af" alt="React Logo" style="height: 40px; width: auto;">
     <img src="https://github.com/user-attachments/assets/6ccceac2-17e7-41a8-ac40-f7efaa94a26c" alt="Ant Design Logo" style="height: 40px; width: auto;">
      <img src="https://github.com/user-attachments/assets/c2006721-e0f5-4509-881f-ed0e5ec5f70d" alt="Tailwind CSS Logo" style="height: 40px; width: auto;">
@@ -101,7 +101,12 @@ Journify is built using the MERN stack (MongoDB, Express, React, and Node.js). T
 
 #### **Backend**
 
-**\[Logos Here\]**
+<div style="display: flex; justify-content: space-around; align-items: center; gap: 10px;" align="center">
+  <img src="https://github.com/user-attachments/assets/beb81fa7-6b0c-404e-9d25-d87b4f32e00b" alt="Node JS Logo" style="height: 40px; width: auto;">
+    <img src="https://github.com/user-attachments/assets/c7fe77f1-4a01-4ea7-b628-760d4ed9c0bd" alt="MongoDB Logo" style="height: 40px; width: auto;">
+</div>
+
+
 
 -   **Node.js and Express:** Express is used to create API endpoints that handle CRUD operations for journal entries and user data.
 -   **MongoDB and Mongoose:** MongoDB is used as the database, with Mongoose as the ODM (Object Data Modeling) library. This setup allows for flexible and efficient data modeling and querying.
@@ -217,8 +222,9 @@ module.exports = JournalEntry;
 -   Additional Libraries: Other essential libraries include `dotenv`  for managing environment variables, `cookie-parser`  for handling cookies, and `nodemailer`  for sending emails.
 
 #### **Hosting and Infrastructure**
-
-**\[LOGOS Here\]**
+<div style="display: flex; justify-content: space-around; align-items: center; gap: 10px;" align="center">
+  <img src="https://github.com/user-attachments/assets/28a5be61-885b-48e2-82f9-61cce8a626a5" alt="Node JS Logo" style="height: 40px; width: auto;">
+</div>
 
 -   **Frontend:** Hosted on AWS Amplify, providing a scalable and managed environment for the React application.
 -   **Backend:** Hosted on AWS Elastic Beanstalk, ensuring a robust and scalable server environment for the Express application.
