@@ -393,10 +393,10 @@ By overcoming these challenges, Journify provides a seamless, secure, and respon
 ### **Making Tour Component Responsive**
 
 -   The tour component offered by Ant Design was not responsive across devices. Overwriting styles caused issues on cell phones.
-
-    <img src="https://github.com/user-attachments/assets/89f634a5-3847-4631-aca4-4d758f48335e" alt="tour-desktop" style="display: inline-block; width: 350px;">
-
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/89f634a5-3847-4631-aca4-4d758f48335e" alt="tour-desktop" style="display: inline-block; height: 380px;">
     <img src="https://github.com/user-attachments/assets/54db513b-ce38-4d87-82e2-1770e9ce6d8d" alt="tour-mobile" style="display: inline-block;">
+    </p>
 
 -   Redesigned the entire tour workflow using @reactour/tour to ensure a seamless and responsive user experience.
 
