@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="assets/logo.png" width="90" alt="Journify icon" />
-</p>
-
 <h1 align="center">Journify — Reflect & Discover Yourself</h1>
 
 <p align="center"><strong>From a conversation at Collision to a calm, full-stack journaling experience.</strong></p>
