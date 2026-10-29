@@ -1,443 +1,356 @@
-# Journify - Reflect and Discover Yourself
-
 <p align="center">
-	<img width="100%" alt="logo" src="https://github.com/user-attachments/assets/6824ce96-6a8f-41a1-9dc8-3b922e53a62e">
+  <img src="assets/logo.png" width="90" alt="Journify icon" />
 </p>
 
-Journify is a Zen-inspired journal app designed to enhance personal reflection and mindfulness. The app features customizable entries with Notion-style formatting, Zen music, tailored journaling prompts, focus mode, mood tracking, and visualizations through pie charts and calendar views.
+<h1 align="center">Journify — Reflect & Discover Yourself</h1>
 
-### Our Mission
+<p align="center"><strong>From a conversation at Collision to a calm, full-stack journaling experience.</strong></p>
 
--   Provide users with a serene and intuitive journaling experience
--   Encourage consistent journaling habits through features like streaks and calendar views
--   Help users track and visualize their moods and progress over time
-
-## Development Journey 
-
-### Introduction
-
-As a full-stack engineer with expertise in both frontend and backend development, I led the development of Journify from concept to deployment. This involved building the app's core functionality, implementing the Notion-style block editor, integrating dashboards for insights, and ensuring a smooth user experience across all devices.
-
-The inspiration for Journify came from a fortunate meeting at the Collision Conference in Toronto. There, I met Candice, a talented UI/UX designer. We discovered our shared passion for mindful living and personal journaling, recognizing the value of self-reflection but feeling that existing tools lacked the aesthetic appeal and functionality to make the experience truly fulfilling.
-
-Our Vision Drawing inspiration from Notion's block-style editor, we envisioned bringing this intuitive, flexible format to a dedicated journaling app. We aimed to create a digital space that not only facilitated easy, structured journaling but also resonated with users who appreciate a calm, Zen-inspired environment.
-
-### Key Objectives
-
-1. Encourage regular journaling habits
-2. Support mental well-being
-3. Appeal to yoga enthusiasts and mindful living practitioners
-
-We believe Journify offers a unique solution for those seeking a more engaging and aesthetically pleasing journaling experience, combining the practicality of digital tools with the mindfulness of traditional journaling practices.
-
-### **Key Features**
-
-Highlight the main features of Journify, such as:
-
--   **Customizable Entries:** Notion-style formatting using "/" commands.
--   **Zen Music:** Curated playlists for focus, meditation, or relaxation.
--   **Journaling Prompts:** Tailored prompts to inspire reflection.
--   **Focus Mode:** Distraction-free journaling environment.
--   **Streaks and Calendar Views:** Track journaling habits and revisit past entries.
--   **Mood Tracking:** Record and visualize mood patterns with pie charts.
--   **Calendar View:** A comprehensive view of journaling activity over time.
-
-## Design and User Experience 
-
-![mood-board](https://github.com/user-attachments/assets/a86d6e8b-1b10-475e-8e50-e6529d901d14)
-
-The design principles for Journify center around simplicity, elegance, and functionality. We created an intuitive and inviting interface to encourage regular journaling. The app features a clean, minimalist design with a calming color palette inspired by nature, promoting tranquility and focus.
-
-<p align="center"><img height="350" alt="logo" src="https://github.com/user-attachments/assets/1ded6a90-eb6d-4858-9cf4-abb99258e7d4">
+<p align="center">
+  A visual case study in product thinking, design collaboration, user feedback, and end-to-end engineering.
 </p>
 
-Typography was carefully selected for readability and warmth, while icons and visual elements feature soft, rounded edges to maintain a gentle aesthetic. The Zen vibe influences every aspect of the user interface, from soothing background animations to subtle ambient sounds and nature-themed illustrations.
-
-A distraction-free writing interface, complete with an optional focus mode, allows users to immerse themselves fully in their journaling. Integrated Zen music playlists enhance the overall experience, creating a sanctuary for reflection and mindfulness.
-
-### User Feedback and Iterations 
-
-![research-1](https://github.com/user-attachments/assets/4c3541cc-1005-49a7-8a73-b0eb19f2657b)
-
-Throughout development, we conducted multiple rounds of user testing to refine Journify's design and functionality. Users appreciated the clean interface, praising its ease of use and the positive impact of Zen music playlists on focus and reflection.
-
-![research-2](https://github.com/user-attachments/assets/919f0e55-c03b-4096-a9e5-32fa32afb3b3)
-
-Feedback on the block-style editor led to fine-tuning for improved responsiveness and additional formatting options. Users emphasized the importance of visual consistency, prompting refinements in our color palette and iconography. The focus mode received high praise for creating a distraction-free writing environment.
-
-![research-3](https://github.com/user-attachments/assets/092f829b-951d-4ef6-9f34-945a3d634708)
-
-![research-4](https://github.com/user-attachments/assets/ba5f26b9-8a36-4dc0-aa17-f15383580b2f)
-
-By incorporating this feedback, we've created a user experience that meets and exceeds our target audience's expectations, making Journify a delightful and effective tool for mindful journaling.
-
-## Technical Implementation
-
-### **Technologies and Frameworks Used to Build Journify**
-
-Journify is built using the MERN stack (MongoDB, Express, React, and Node.js). This stack was chosen for its efficiency, scalability, and flexibility in developing both the frontend and backend of the application.
-
-#### **Frontend**
-
-<div style="display: flex; justify-content: space-around; align-items: center; gap: 10px;" align="center">
-  <img src="https://github.com/user-attachments/assets/8ad7f9b4-df21-480a-8007-87fc5ee520af" alt="React Logo" style="height: 40px; width: auto;">
-    <img src="https://github.com/user-attachments/assets/6ccceac2-17e7-41a8-ac40-f7efaa94a26c" alt="Ant Design Logo" style="height: 40px; width: auto;">
-     <img src="https://github.com/user-attachments/assets/c2006721-e0f5-4509-881f-ed0e5ec5f70d" alt="Tailwind CSS Logo" style="height: 40px; width: auto;">
-      <img src="https://github.com/user-attachments/assets/0ff9b104-f4a0-4ee9-a82f-10755d334c8a" alt="Blocknote Logo" style="height: 40px; width: auto;">
-       <img src="https://github.com/user-attachments/assets/9872a0f1-1a9f-48f2-9079-c4fa37c20dbe" alt="Axios Logo" style="height: 40px; width: auto;">
-</div>
-
--   **React:** Provides a robust framework for creating dynamic user interfaces with reusable components.
--   **Vite:** The project uses Vite as the build tool, which offers a faster and leaner development experience compared to traditional tools like Webpack.
--   **Ant Design:** For UI components, we used Ant Design and Ant Design Style. These libraries provide a wide range of pre-designed components, ensuring a consistent and professional look and feel throughout the app.
--   **Tailwind CSS:** Tailwind CSS is used for styling, providing utility-first CSS classes that allow for rapid and responsive design.
--   **@blocknote/react and @blocknote/mantine:** These libraries are used to implement the Notion-style block editor, allowing users to create and format journal entries with ease.
--   **React Router:** For handling navigation and routing within the app, React Router is utilized, ensuring smooth transitions between different views and pages.
--   **Axios:** Axios is used for making HTTP requests to the backend, ensuring efficient data fetching and submission.
-
-#### **Backend**
-
-<div style="display: flex; justify-content: space-around; align-items: center; gap: 10px;" align="center">
-  <img src="https://github.com/user-attachments/assets/beb81fa7-6b0c-404e-9d25-d87b4f32e00b" alt="Node JS Logo" style="height: 40px; width: auto;">
-    <img src="https://github.com/user-attachments/assets/c7fe77f1-4a01-4ea7-b628-760d4ed9c0bd" alt="MongoDB Logo" style="height: 40px; width: auto;">
-</div>
-
-
-
--   **Node.js and Express:** Express is used to create API endpoints that handle CRUD operations for journal entries and user data.
--   **MongoDB and Mongoose:** MongoDB is used as the database, with Mongoose as the ODM (Object Data Modeling) library. This setup allows for flexible and efficient data modeling and querying.
-
-##### **Database Schemas:**
-
-###### **User Schema**
-
-```
-const mongoose = require('mongoose');
-
-const userSchema = new mongoose.Schema(
-	{
-		name: {
-			type: String,
-			required: true,
-		},
-		email: {
-			type: String,
-			required: true,
-			unique: true,
-			trim: true,
-			lowercase: true,
-		},
-		password: {
-			type: String,
-			required: false,
-		},
-		picture: {
-			type: String,
-		},
-		googleId: String,
-		preferences: {
-			isDarkMode: {
-				type: Boolean,
-				default: false,
-			},
-			fontFamily: {
-				type: String,
-				default: 'JetBrains Mono, monospace',
-			},
-			onLoadLastJournalEntry: {
-				type: Boolean,
-				default: true,
-			},
-		},
-		longestStreak: {
-			type: Number,
-			default: 0,
-		},
-		passwordReset: {
-			token: String,
-			expiryDate: {
-				type: Date,
-				default: Date.now() + 3600000, // 1 hour
-			},
-		},
-	},
-	{ timestamps: true }
-);
-
-const User = mongoose.model('User', userSchema);
-
-module.exports = User;
-```
-
-##### Journal Entry Schema
-
-```
-const mongoose = require('mongoose');
-
-const journalEntrySchema = new mongoose.Schema(
-	{
-		userID: {
-			type: mongoose.Schema.Types.ObjectId,
-			ref: 'User',
-			required: true,
-		},
-		title: {
-			type: String,
-			required: true,
-		},
-		content: {
-			type: String,
-			required: true,
-		},
-		mood: {
-			type: String,
-			enum: [
-				'happy',
-				'relaxed',
-				'excited',
-				'neutral',
-				'stressed',
-				'sad',
-				'angry',
-				'anxious',
-			],
-			required: true,
-		},
-	},
-	{ timestamps: true }
-);
-
-const JournalEntry = mongoose.model('JournalEntry', journalEntrySchema);
-
-module.exports = JournalEntry;
-```
-
--   Authentication and Security: For authentication, JSON Web Tokens (JWT) are used, and `bcrypt`  is used for hashing passwords to ensure secure user authentication.
--   Additional Libraries: Other essential libraries include `dotenv`  for managing environment variables, `cookie-parser`  for handling cookies, and `nodemailer`  for sending emails.
-
-#### **Hosting and Infrastructure**
-<div style="display: flex; justify-content: space-around; align-items: center; gap: 10px;" align="center">
-  <img src="https://github.com/user-attachments/assets/28a5be61-885b-48e2-82f9-61cce8a626a5" alt="Node JS Logo" style="height: 40px; width: auto;">
-</div>
-
--   **Frontend:** Hosted on AWS Amplify, providing a scalable and managed environment for the React application.
--   **Backend:** Hosted on AWS Elastic Beanstalk, ensuring a robust and scalable server environment for the Express application.
--   **Routing:** Managed through AWS Route 53, providing reliable and scalable DNS web service.
--   **HTTPS:** AWS Certificate Manager is used to manage SSL/TLS certificates, ensuring secure HTTPS communication across the application.
-
-## Challenges Faced During Development
-
-### **Implementing Notion-Style Formatting:**
-
-One significant challenge was implementing the Notion-style block editor. While using the beta phase library, there was an issue where the editor would re-render completely upon any `onChange` event when it was made controlled, making it difficult to get the values to be typed efficiently.
-
-#### **Solution**
-
--   Made the editor uncontrolled.
--   Implemented a reducer for central management of all journal data.
--   Developed debounced functions for APIs and state updates to ensure smooth user experience and efficient data handling.
-
-**Journal Data Management:**
-
-```
-import React, { createContext, useReducer, useEffect, useContext, useCallback } from 'react';
-import { createJournalEntry, getAllJournalEntries } from '../services/journalEntryService';
-import { useUser } from '../contexts/UserContext';
-
-// Initial state
-const initialState = [];
-
-// Action types
-const ACTIONS = {
-    ADD_ENTRY: 'ADD_ENTRY',
-    UPDATE_ENTRY: 'UPDATE_ENTRY',
-    DELETE_ENTRY: 'DELETE_ENTRY',
-    SET_ENTRIES: 'SET_ENTRIES',
-    RESET_ENTRIES: 'RESET_ENTRIES',
-};
-
-// Reducer function
-const journalEntriesReducer = (state, action) => {
-    switch (action.type) {
-        case ACTIONS.ADD_ENTRY:
-            return [action.payload, ...state];
-
-        case ACTIONS.UPDATE_ENTRY:
-            return state
-                .map((entry) =>
-                    entry._id === action.payload._id
-                        ? { ...entry, ...action.payload }
-                        : entry,
-                )
-                .sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt));
-
-        case ACTIONS.DELETE_ENTRY:
-            return state.filter((entry) => entry._id !== action.payload);
-
-        case ACTIONS.SET_ENTRIES:
-            return action.payload.sort(
-                (a, b) => new Date(b.updatedAt) - new Date(a.updatedAt),
-            );
-
-        case ACTIONS.RESET_ENTRIES:
-            return [];
-
-        default:
-            return state;
-    }
-};
-
-// Create context
-const JournalEntriesContext = createContext();
-
-// Provider component
-export const JournalEntriesProvider = ({ children }) => {
-    const [journalEntriesState, journalEntriesDispatch] = useReducer(
-        journalEntriesReducer,
-        initialState,
-    );
-    const { user, logout } = useUser();
-
-    const fetchEntries = useCallback(async () => {
-        if (!user?._id || !journalEntriesState?.length === 0) {
-            return;
-        }
-        // Fetch journal entries from the database
-        try {
-            const journalEntries = await getAllJournalEntries();
-            if (journalEntries.length === 0) {
-                const firstJournalEntry = await createJournalEntry();
-                journalEntries.push(firstJournalEntry);
-            }
-            journalEntriesDispatch({
-                type: ACTIONS.SET_ENTRIES,
-                payload: journalEntries,
-            });
-        } catch (error) {
-            console.error('Failed to fetch journal entries:', error);
-            if (error?.status === 401) {
-                await logout();
-            }
-        }
-    }, [user?._id]);
-
-    useEffect(() => {
-        fetchEntries();
-    }, [fetchEntries]);
-
-    const journalEntriesCleanup = () => {
-        journalEntriesDispatch({ type: ACTIONS.RESET_ENTRIES });
-    };
-
-    return (
-        <JournalEntriesContext.Provider
-            value={{
-                journalEntriesState,
-                journalEntriesDispatch,
-                ACTIONS,
-                journalEntriesCleanup,
-            }}
-        >
-            {children}
-        </JournalEntriesContext.Provider>
-    );
-};
-
-export const useJournalEntries = () => {
-    const context = useContext(JournalEntriesContext);
-    if (!context) {
-        throw new Error(
-            'useJournalEntries must be used within a JournalEntriesProvider',
-        );
-    }
-    return context;
-};
-```
-
-### **Token-Based Authentication**
-
-Implementing cookie-based authentication for the first time presented challenges, particularly in understanding and configuring all the cookie options correctly. However, this process significantly enhanced the security and usability of the application.
-
-#### **Auth Token Generation:**
-
-```
-const authTokenCookieOptions = {
-	expires: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000), // Expires in 30 days
-};
-
-// Update the authTokenCookieOptions ifo in production
-if (process.env.NODE_ENV !== 'development') {
-	authTokenCookieOptions.domain = process.env.AUTH_COOKIE_DOMAIN;
-	authTokenCookieOptions.secure = true; // Cannot be true if backend is not HTTPS
-	authTokenCookieOptions.path = '/';
-	authTokenCookieOptions.sameSite = 'none';
-	authTokenCookieOptions.httpOnly = true;
-
-	console.log(
-		'Using production authTokenCookieOptions',
-		authTokenCookieOptions
-	);
-}
-```
-
-By overcoming these challenges, Journify provides a seamless, secure, and responsive journaling experience for its users.
-
-### **Making Tour Component Responsive**
-
--   The tour component offered by Ant Design was not responsive across devices. Overwriting styles caused issues on cell phones.
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/89f634a5-3847-4631-aca4-4d758f48335e" alt="tour-desktop" style="display: inline-block; height: 380px;">
-    <img src="https://github.com/user-attachments/assets/54db513b-ce38-4d87-82e2-1770e9ce6d8d" alt="tour-mobile" style="display: inline-block;">
-    </p>
+  <img src="https://github.com/user-attachments/assets/6824ce96-6a8f-41a1-9dc8-3b922e53a62e" alt="Original Journify project banner" width="100%" />
+</p>
 
--   Redesigned the entire tour workflow using @reactour/tour to ensure a seamless and responsive user experience.
+<p align="center"><strong>Product engineering</strong> · <strong>Full-stack development</strong> · <strong>Human-centred design</strong> · <strong>Cloud deployment</strong></p>
 
-## Reflection and Learnings
+---
 
-Working on Journify has been an enriching and transformative experience. This project not only deepened my technical skills but also honed my problem-solving abilities and introduced me to new technologies and best practices in full-stack development.
+### At a glance
 
-### **Technical Growth**
+| | |
+| :-- | :-- |
+| **The product** | A Zen-inspired digital journal for reflection, mood tracking, and consistent writing habits |
+| **My role** | Led full-stack development, from core product functionality through deployment |
+| **Collaboration** | Worked with a UI/UX designer and incorporated feedback from user testing |
+| **What I built** | Journal editing, application state, account and data workflows, insights views, and responsive experiences |
+| **Core stack** | React, Vite, BlockNote, Node.js, Express, MongoDB, Mongoose, AWS |
+| **Case-study focus** | Translating an idea into software, navigating trade-offs, and improving the experience through iteration |
 
-1. **Full-Stack Development:** Building Journify from the ground up allowed me to work on both frontend and backend aspects, providing a holistic understanding of web application development.
-2. **React and State Management:** Implementing complex features like the Notion-style block editor and ensuring a seamless user experience required advanced knowledge of React and effective state management strategies.
-3. **Authentication and Security:** Implementing secure user authentication using JSON Web Tokens (JWT) and bcrypt taught me the importance of robust security measures in web applications.
-4. **Responsive Design:** Overcoming challenges with the responsiveness of components, particularly the tour component, enhanced my skills in creating user-friendly and adaptable interfaces.
+> **About this case study:** This repository documents the development of Journify, rather than hosting its application source. The architecture and deployment details below describe the implementation recorded in the original project documentation; a currently operating live deployment has not been independently verified.
 
-### **Problem-Solving and Adaptability**
+## Table of contents
 
-1. **Handling Beta Software:** Working with beta libraries, such as Blocknote, presented unique challenges. Adapting to these limitations and finding workarounds, such as switching to an uncontrolled editor, improved my ability to think on my feet and remain flexible.
-2. **Complex Data Management:** Implementing a central reducer for managing journal data and using debounced functions for API calls and state updates taught me efficient ways to handle complex data flows in applications.
+1. [Meet Journify](#1-meet-journify)
+2. [The Story Behind Journify](#2-the-story-behind-journify)
+3. [My Role & Contributions](#3-my-role--contributions)
+4. [Understanding the Users](#4-understanding-the-users)
+5. [From Concept to Design](#5-from-concept-to-design)
+6. [Exploring Journify](#6-exploring-journify)
+7. [Behind the Scenes: Building Journify](#7-behind-the-scenes-building-journify)
+8. [Engineering Challenges & Solutions](#8-engineering-challenges--solutions)
+9. [Feedback, Outcomes & Learnings](#9-feedback-outcomes--learnings)
+10. [The Road Ahead](#10-the-road-ahead)
 
-### **Collaboration and Communication**
+---
 
-1. **Cross-Functional Collaboration:** Coordinating with team members and understanding different perspectives helped in creating a more cohesive and functional application.
-2. **Clear Documentation:** Writing comprehensive documentation and comments for the codebase ensured that the project could be easily understood and maintained by others in the future.
+## 1. Meet Journify
 
-### Future Improvements and Features
+**Writing about your day should feel like a moment of calm, not another task to complete.**
 
-As Journify continues to evolve, there are several enhancements and features I plan to add to improve the user experience and functionality:
+Journify began with that simple idea. We wanted to create a place where people could write freely, pause to reflect, and look back on how they were feeling over time. The experience combines the flexibility of a block-based editor with a quieter, more intentional visual language.
 
-1. **Advanced Analytics:** Implementing advanced analytics to provide users with insights into their journaling habits and mood patterns over time.
-2. **Enhanced Customization:** Adding more customization options for themes, fonts, and layouts to allow users to personalize their journaling space.
-3. **AI-Powered Features:** Integrating AI to provide personalized journaling prompts, sentiment analysis, and mood prediction based on journal entries.
-4. **Offline Mode:** Implementing offline capabilities to allow users to access and create journal entries without an internet connection, syncing data once connectivity is restored.
-5. **Notifications and Reminders:** Adding features for setting reminders and notifications to encourage consistent journaling habits.
+Rather than trying to be an all-purpose productivity workspace, the product was designed around a narrower goal: **make it easier to return to journaling regularly and enjoy the process.**
 
-Reflecting on this project, I am proud of the progress made and excited about the potential future enhancements. Journify has been a significant milestone in my journey as a developer, and I look forward to continuing to refine and expand its capabilities.
+The original product concept brought several experiences together:
 
-## Conclusion
+- **Express yourself:** Write entries using a flexible, Notion-style editor with formatting and slash commands.
+- **Find your focus:** Use a distraction-reduced writing mode and optional Zen music.
+- **Start when words are hard:** Choose from journaling prompts.
+- **Notice patterns:** Record moods and explore visual summaries of entries and journaling activity.
+- **Make it a habit:** Revisit past entries through calendar views and track journaling streaks.
 
-![low-fedality](https://github.com/user-attachments/assets/43ff2011-7ebd-4d8e-8062-43fa6525d93c)
+These features are documented in the original case study. The sections below explain the thinking and engineering behind them, not a claim that a public live demo is available today.
 
-Throughout this documentation, we explored the development and features of Journify, a comprehensive journaling app designed to enhance user experience and encourage consistent journaling habits. Key highlights include:
+## 2. The Story Behind Journify
 
-1. **Technological Framework:** Journify is built using the efficient and scalable MERN stack, ensuring robust performance and flexibility.
-2. **Innovative Features:** From the Notion-style block editor to the responsive design and seamless navigation, Journify offers a rich, user-friendly interface.
-3. **Challenges Overcome:** We navigated complex issues, such as integrating beta libraries, managing state efficiently, and ensuring component responsiveness, to create a polished final product.
-4. **Security and Authentication:** Implementing secure, token-based authentication and best practices in data protection ensures a safe environment for users' personal entries.
+The idea for Journify came from an unexpected conversation at **Collision Conference in Toronto**, where I met Candice, a UI/UX designer. We found a shared interest in mindfulness and personal journaling, along with a feeling that the tools we had encountered did not always make reflection feel welcoming.
 
-Journify isn't just a journaling app; it's a tool designed to foster mindfulness, self-reflection, and personal growth. By providing users with a versatile and intuitive platform, Journify encourages regular journaling, helping individuals track their moods, document their thoughts, and reflect on their experiences. The app's user-centric design and advanced features make it a valuable addition to anyone's daily routine, promoting mental well-being and productivity.
+That conversation led to a bigger question:
 
-I invite you to experience the benefits of Journify firsthand. Whether you're looking to improve your journaling habits, track your moods, or simply have a dedicated space for reflection, Journify is the perfect companion. Try the app today and see how it can transform your journaling practice.
+> **What if a journal could offer the flexibility of a modern digital workspace while still feeling peaceful and personal?**
 
-For further discussion, collaboration, or feedback, feel free to connect with me. Let's explore how Journify can continue to evolve and meet your needs. Thank you for your time and interest in Journify. Together, let's make mindfulness and reflection a seamless part of everyday life.
+We imagined a simple, beautiful environment that encouraged people to come back—not because it demanded productivity, but because the experience itself felt worthwhile. Notion's block-style editing offered one useful interaction model. The challenge was to adapt that flexibility for a much more focused journaling product.
+
+<p align="center">
+  <img src="assets/ideation.png" alt="Original Journify ideation and early product exploration" width="100%" />
+</p>
+<p align="center"><em>Early ideation material preserved from the original project.</em></p>
+
+Our early product goals were to support regular reflection, help people record how they felt, and create an experience that appealed to people interested in mindful living. These were **design goals**, not measured health outcomes.
+
+### From idea to delivery
+
+![Illustrated stages of the Journify product journey: discover, design, build, iterate and ship](assets/diagrams/development-journey.svg)
+
+One of my most valuable lessons from this project was that good software development rarely moves in a straight line. Ideas become screens, screens reveal technical constraints, and feedback changes what needs attention next.
+
+## 3. My Role & Contributions
+
+I led the **full-stack implementation of Journify**, working across the parts of the application that users see and the services that support them.
+
+My role was not just to connect a design to an API. I had to make individual pieces work as a coherent experience: the editor, journal data, authentication flows, visual insights, navigation, responsive behaviour, and deployment.
+
+### What I owned
+
+| Area | My contribution |
+| :-- | :-- |
+| **Product implementation** | Turned the product vision and design direction into interactive application features |
+| **Frontend experience** | Built the React interface, journal editing experience, navigation, and responsive behaviour |
+| **Application behaviour** | Managed journal state, data fetching, and updates across the writing experience |
+| **Backend and data** | Implemented API and data workflows using Node.js, Express, MongoDB, and Mongoose |
+| **Authentication** | Worked through JWT-based authentication, cookies, and password handling |
+| **Delivery** | Deployed the documented frontend and backend using AWS services |
+| **Iteration** | Responded to technical friction and user feedback with changes to the product |
+
+### What made the collaboration valuable
+
+Working with a designer meant thinking beyond whether a feature technically worked. I needed to understand **what the experience was intended to feel like**, explain where engineering constraints mattered, and find ways to preserve the design intent without sacrificing usability.
+
+User feedback added another layer. The work was not finished when a screen looked right; it had to behave well when people actually used it.
+
+That combination—understanding a need, communicating across roles, making implementation decisions, and owning delivery—is also how I approach customer-facing product engineering.
+
+## 4. Understanding the Users
+
+A journaling application has a particular challenge: people are often using it to think, slow down, and express themselves. Small interruptions can matter more here than they might in a conventional business dashboard.
+
+The original project describes **multiple rounds of user testing** and feedback on the writing experience, visual design, focus mode, and ambient music. The research material below is retained from that work.
+
+### Exploring reactions and expectations
+
+<p align="center">
+  <img src="assets/research-1.png" alt="Journify user research visual, part one" width="48%" />
+  <img src="assets/research-2.png" alt="Journify user research visual, part two" width="48%" />
+</p>
+<p align="center">
+  <img src="assets/research-3.png" alt="Journify user research visual, part three" width="48%" />
+  <img src="assets/research-4.png" alt="Journify user research visual, part four" width="48%" />
+</p>
+<p align="center"><em>Research and feedback artifacts from the original documentation.</em></p>
+
+Three themes stood out in the documented feedback:
+
+**The environment mattered.** People responded positively to the calm interface and focus-oriented features. That reinforced the decision to keep the visual design restrained instead of crowding the screen with controls.
+
+**Editing needed to feel natural.** Feedback on the block-based editor pointed to responsiveness and formatting. Those observations aligned with the technical challenge of avoiding disruptive re-renders while typing.
+
+**Consistency built confidence.** Feedback about colours and iconography encouraged refinement of details that make the product feel like one experience rather than disconnected components.
+
+We did not document a reliable sample size, formal satisfaction score, or retention improvement, so those results are presented as qualitative feedback rather than quantified research findings.
+
+![A product feedback loop connecting observations, prioritization and improvements](assets/diagrams/feedback-loop.svg)
+
+The practical lesson was simple: **feedback is most useful when it changes a specific product decision.**
+
+## 5. From Concept to Design
+
+The design direction was rooted in a calm, Zen-inspired atmosphere: a gentle palette, clear typography, generous spacing, and interfaces that supported writing without competing for attention.
+
+This was a collaboration between design and engineering. The design work defined the character of the experience; my responsibility was to make it functional and consistent across devices.
+
+### Finding the visual direction
+
+<p align="center">
+  <img src="assets/mood-board.png" alt="Journify original mood board and visual inspiration" width="100%" />
+</p>
+<p align="center"><em>The mood board established the atmosphere we wanted the product to communicate.</em></p>
+
+### Making the experience readable
+
+<p align="center">
+  <img src="assets/typography.png" alt="Original Journify typography exploration" width="100%" />
+</p>
+<p align="center"><em>Typography and visual hierarchy helped the journal feel approachable and readable.</em></p>
+
+### Moving from early layouts to an interface
+
+<p align="center">
+  <img src="assets/low-fedality.png" alt="Early low-fidelity Journify interface explorations" width="100%" />
+</p>
+<p align="center"><em>Early layouts made it possible to explore the experience before every implementation detail was settled.</em></p>
+
+The biggest design principle was not minimalism for its own sake. It was **giving the user's words the most important place on the screen**. Focus mode, restrained navigation, and thoughtful use of ambient elements all supported that idea.
+
+## 6. Exploring Journify
+
+The product brought together a number of connected experiences. Each solved a different part of the same problem: helping people start, continue, and revisit a journaling practice.
+
+### A flexible place to write
+
+A blank page can be freeing, but it can also feel limiting. Journify's Notion-style editor supported formatted content and slash commands, allowing an entry to take shape as the person wrote. The goal was flexibility without turning journaling into document administration.
+
+The editor later became one of the most interesting engineering challenges in the project, because a good writing interface needs to respond naturally to each keystroke.
+
+### Focus without isolation
+
+An optional focus mode reduced distractions during writing. Zen music was included as another way to create a calmer environment, without requiring people to use it.
+
+### Prompts to get started
+
+Journaling prompts offered a starting point for moments when someone wanted to reflect but did not know what to write about. The intent was to reduce the effort needed to begin.
+
+### Moods, history, and habits
+
+Mood selection and visual summaries helped people revisit what they had recorded. Calendar views and streaks offered a way to find past entries and see how regularly they were journaling.
+
+These features support reflection; they are not presented as a validated way to diagnose or predict mental health.
+
+### Helping people find their way around
+
+Onboarding was important because the application combined several unfamiliar interactions. The original implementation included a guided tour, which I adapted to work across screen sizes.
+
+<p align="center">
+  <img src="assets/tour-desktop.gif" alt="Original animated Journify onboarding tour in the desktop experience" width="100%" />
+</p>
+<p align="center"><em>Desktop onboarding walkthrough from the project.</em></p>
+
+<p align="center">
+  <img src="assets/tour-mobile.gif" alt="Original animated Journify onboarding tour in the mobile experience" width="55%" />
+</p>
+<p align="center"><em>The onboarding experience adapted for a smaller screen.</em></p>
+
+**A note on visual evidence:** These are original project recordings. The documentation repository does not currently contain a complete verified screenshot set for every feature described above, so no substitute or AI-generated interface screens have been passed off as actual product captures.
+
+## 7. Behind the Scenes: Building Journify
+
+The interesting part of full-stack development is not simply using many technologies. It is making the different parts of a system work together in a way that users never have to think about.
+
+For Journify, writing an entry involved more than displaying a text field. The interface needed to accept edits, keep application state in sync, communicate with the backend, and persist information so people could return to it later.
+
+### The system at a glance
+
+![Diagram showing Journify's React frontend, Node and Express backend, MongoDB data layer and documented AWS deployment](assets/diagrams/system-overview.svg)
+
+### Technology at a glance
+
+<p align="center">
+  <img src="assets/react-logo.png" alt="React" width="64" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="assets/node-js-logo.png" alt="Node.js" width="64" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="assets/mongo-db-logo.png" alt="MongoDB" width="64" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="assets/blocknote-logo.png" alt="BlockNote" width="64" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="assets/vite-logo.svg" alt="Vite" width="64" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="assets/aws-logo.png" alt="AWS" width="64" />
+</p>
+
+**On the frontend**, React provided the interface, while Vite supported the development workflow. Ant Design, Tailwind CSS, and BlockNote helped build the visual components and editing experience. React Router handled navigation, and Axios was used for API requests.
+
+**On the backend**, Node.js and Express supported application endpoints for journal entries and user data. MongoDB and Mongoose were used to model and store users, entries, moods, and preferences.
+
+**For authentication**, the implementation documented JWTs, password hashing with bcrypt, and cookie handling. Those choices required attention to how browser requests and sessions behaved in development and production.
+
+**For deployment**, the documented setup used AWS Amplify for the frontend, Elastic Beanstalk for the backend, Route 53 for DNS, and AWS Certificate Manager for HTTPS certificates.
+
+The architecture diagram is a **conceptual overview** of the documented stack, not a production infrastructure audit or a claim about present-day service availability.
+
+### Why these choices mattered
+
+Rather than using a technology just because it was popular, I worked with tools that suited the problem: a flexible editor for expressive writing, a familiar component system for repeatable interfaces, backend APIs for application logic, and document-oriented storage for journal entries.
+
+The more difficult decisions emerged where the tools did not behave as expected. Those challenges taught me more than the initial technology selection.
+
+## 8. Engineering Challenges & Solutions
+
+Three problems from this project stand out because each required more than following the original implementation plan.
+
+### Challenge 01 — Keeping the editor responsive
+
+**The problem.** While working with an early version of the block editor library, a controlled editor configuration could cause the editor to re-render on each change. Typing felt less natural than a writing product needed it to feel.
+
+**The decision.** I moved the editor to an uncontrolled approach, introduced a reducer to manage journal data centrally, and used debounced updates to avoid triggering unnecessary work on every keystroke.
+
+![Illustration comparing the controlled editor rerender problem with uncontrolled editing, shared state and debounced updates](assets/diagrams/editor-decision.svg)
+
+**Why it mattered.** The engineering solution supported the product goal. People should be thinking about what to write—not whether the interface will interrupt them.
+
+**What this taught me.** A technically correct implementation can still be the wrong experience. When a library's default behaviour conflicts with the product, I need to understand the constraint and adapt the design of the solution.
+
+### Challenge 02 — Authentication across environments
+
+**The problem.** Working with token-based, cookie-based authentication introduced practical questions about browser behaviour and production configuration.
+
+**The approach.** I worked through JWT-based sessions and cookie settings, including production-specific domain, HTTPS, HttpOnly, and SameSite configuration, while using bcrypt for password hashing.
+
+**Why it mattered.** Authentication is part of the user's experience, even when it stays in the background. A smooth login flow depends on the frontend, backend, and browser agreeing on how session information is handled.
+
+**What this taught me.** Security-related choices should be deliberate and tested across environments. This case study describes the historical implementation; it does not claim that a current independent security audit has been completed.
+
+### Challenge 03 — Making onboarding work on mobile
+
+**The problem.** The original Ant Design tour component did not respond well to smaller screens. Overriding styles created additional mobile layout issues.
+
+**The decision.** Rather than continuing to patch the same behaviour, I redesigned the onboarding flow using the Reactour library, which better supported the interaction we needed.
+
+**Why it mattered.** Onboarding only works if people can follow it on the device they are using. The desktop and mobile recordings in the product walkthrough show the resulting tour layouts.
+
+**What this taught me.** Replacing a component can be more maintainable than accumulating workarounds, particularly when the original abstraction does not fit the experience.
+
+### The common thread
+
+Each challenge started as a technical issue, but the decision was guided by the same question: **what will make this experience work better for the person using it?**
+
+That is the kind of problem-solving I value in product engineering—understand the underlying need, evaluate the trade-off, and make the smallest justified change that solves it.
+
+## 9. Feedback, Outcomes & Learnings
+
+Journify brought together product exploration, design collaboration, frontend development, backend services, and deployment into one end-to-end project.
+
+### What was delivered
+
+- A journaling application with flexible editing and reflection-focused features.
+- Journal and account data workflows connected to a frontend experience.
+- Mood and activity views intended to support reflection and journaling habits.
+- A distraction-reduced writing environment and onboarding for desktop and mobile.
+- A documented AWS deployment setup.
+- Product refinements informed by feedback and implementation challenges.
+
+### What changed through iteration
+
+The original documentation records improvements to editor behaviour, additional formatting work, visual consistency, and the mobile tour experience. These are meaningful qualitative outcomes, but the project documentation does **not** establish precise performance gains, adoption figures, or changes in user retention.
+
+### What I took away
+
+**Start with the person, not the stack.** Understanding the intended experience helped me judge whether a particular implementation was actually appropriate.
+
+**Be prepared to change the approach.** The editor and tour challenges were reminders that a plan is useful only while it continues to serve the product.
+
+**Own the connections between systems.** Much of full-stack work happens between components, APIs, data, and deployment—not inside one neatly isolated feature.
+
+**Communicate across disciplines.** Working with design and responding to user feedback helped me translate between what people wanted to experience and what the software needed to do.
+
+The broader lesson was that delivering a working product requires both technical execution and judgment about what matters to the user.
+
+## 10. The Road Ahead
+
+The original roadmap identified several directions that could make Journify more useful over time. These are **ideas for future work**, not features claimed as shipped.
+
+| Opportunity | The user need it could address |
+| :-- | :-- |
+| **Offline journaling** | Keep writing without a connection and synchronize later |
+| **More personalization** | Let people adjust themes, fonts, and layouts to suit their preferences |
+| **Better reflection insights** | Make it easier to understand patterns in writing and mood history |
+| **Gentle reminders** | Help people return to journaling without making it feel like a chore |
+| **Thoughtful AI assistance** | Explore optional prompts or summaries, with privacy and user control as primary constraints |
+
+If revisiting the product, I would begin with the basic experience—reliability, writing flow, and whether people actually return to journal—before adding more advanced capabilities.
+
+---
+
+### Closing reflection
+
+Journify started with a conversation about making reflection feel better. It became an opportunity to build a complete application, work closely with design, learn from users, and solve the kinds of engineering problems that rarely appear in a finished screenshot.
+
+What I value most about the project is not the number of frameworks involved. It is the experience of taking an idea seriously enough to make it real—and adapting the implementation when the product needed something different.
+
+**That is the kind of work I want to keep doing: understanding problems, collaborating with people, and delivering software that is useful in practice.**
+
+---
+
+<sub>Project case study and original visual assets are maintained in this repository. Application source code and live-demo status are not established by this documentation repository. Visual diagrams are explanatory illustrations based on the historical README.</sub>

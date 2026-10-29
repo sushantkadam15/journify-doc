@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 450" width="1120" height="450" role="img" aria-labelledby="title desc">
+<title id="title">Journify editor decision</title><desc id="desc">Problem: a controlled editor rerenders on changes. Solution: uncontrolled editor, shared reducer and debounced updates.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8faf6"/><stop offset="1" stop-color="#f0f6f2"/></linearGradient>
+  <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7" fill="none" stroke="#608677" stroke-width="1.5"/></marker>
+</defs>
+<rect width="1120" height="450" rx="22" fill="url(#bg)"/>
+<text x="36" y="42" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" letter-spacing="2.4" fill="#507364">AN ENGINEERING DECISION</text><text x="36" y="82" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700" fill="#1f3d33">Keep the writing experience uninterrupted</text><rect x="35" y="120" width="495" height="253" rx="19" fill="#fff" stroke="#ecd9ce"/>
+<rect x="590" y="120" width="495" height="253" rx="19" fill="#fff" stroke="#cee2d4"/>
+<text x="56" y="155" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#a06453">THE FRICTION</text>
+<text x="611" y="155" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#43725a">THE CHANGE</text>
+<text x="56" y="192" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" fill="#2b4035">Controlled editor</text>
+<text x="611" y="192" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" fill="#2b4035">Uncontrolled editor</text>
+<text x="56" y="230" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#4e6258">Every change could rerender the editor,</text>
+<text x="56" y="253" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#4e6258">disrupting the rhythm of typing.</text>
+<text x="611" y="230" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#4e6258">Local editing stays responsive.</text>
+<text x="611" y="253" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#4e6258">A reducer coordinates journal state;</text>
+<text x="611" y="276" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#4e6258">debouncing spaces out updates.</text>
+<rect x="58" y="310" width="432" height="38" rx="11" fill="#f8ede7"/><text x="74" y="335" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#935a48">Typing → change → whole-editor refresh</text>
+<rect x="613" y="310" width="432" height="38" rx="11" fill="#e8f3ea"/><text x="628" y="335" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#3b6c54">Typing → local edit → coordinated save</text>
+<path d="M540 255 H579" stroke="#608677" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="38" y="416" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#526f60">A qualitative architecture decision described in the original project documentation; no performance benchmark is claimed.</text>
+</svg>
