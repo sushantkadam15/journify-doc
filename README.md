@@ -224,6 +224,22 @@ For Journify, writing an entry involved more than displaying a text field. The i
 
 ![Diagram showing Journify's React frontend, Node and Express backend, MongoDB data layer and documented AWS deployment](assets/diagrams/system-overview.svg)
 
+### Technology at a glance
+
+<p align="center">
+  <img src="assets/react-logo.png" alt="React" width="64" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="assets/node-js-logo.png" alt="Node.js" width="64" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="assets/mongo-db-logo.png" alt="MongoDB" width="64" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="assets/blocknote-logo.png" alt="BlockNote" width="64" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="assets/vite-logo.svg" alt="Vite" width="64" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="assets/aws-logo.png" alt="AWS" width="64" />
+</p>
+
 **On the frontend**, React provided the interface, while Vite supported the development workflow. Ant Design, Tailwind CSS, and BlockNote helped build the visual components and editing experience. React Router handled navigation, and Axios was used for API requests.
 
 **On the backend**, Node.js and Express supported application endpoints for journal entries and user data. MongoDB and Mongoose were used to model and store users, entries, moods, and preferences.
