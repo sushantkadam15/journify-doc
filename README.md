@@ -27,6 +27,10 @@
 
 > **About this case study:** This repository documents the development of Journify, rather than hosting its application source. The architecture and deployment details below describe the implementation recorded in the original project documentation; a currently operating live deployment has not been independently verified.
 
+## Portfolio media library
+
+[View screenshots, animated previews, and product walkthroughs](https://sushantkadam15.github.io/journify-doc/). The gallery includes desktop and mobile views of the running app with fictional demo entries.
+
 ## Table of contents
 
 1. [Meet Journify](#1-meet-journify)
